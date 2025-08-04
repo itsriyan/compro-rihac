@@ -68,7 +68,6 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="#visimisi">Visi & Misi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Hubungi Kami</a></li>
                 </ul>
             </div>
@@ -182,55 +181,67 @@
         </div>
     </section>
 
-    <!-- Lokasi Section -->
-    <section id="lokasi" class="py-5 bg-white">
-        <div class="container animate__animated animate__fadeInUp animate__faster">
-            <h2 class="section-title text-center"><i class="fa-solid fa-location-dot me-2 text-danger"></i>Lokasi</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center animate__animated animate__fadeIn animate__delay-1s">
-                    <p>Kantor Rihac Technology berlokasi di Tangerang, Banten.</p>
-                    <div class="ratio ratio-16x9 mt-3 animate__animated animate__fadeInUp animate__delay-2s">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.7200635466568!2d106.55997786961049!3d-6.146781266220245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a01f48818b397%3A0xe3a0e48082fdd89c!2sCluster%20Sirena%20Blok%20GB2S-02%20No.%2002!5e0!3m2!1sen!2sid!4v1754276748429!5m2!1sen!2sid"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Hubungi Kami Section -->
+    <!-- Lokasi & Kontak Section Gabung -->
     <section id="kontak" class="py-5 bg-light">
         <div class="container animate__animated animate__fadeInUp animate__faster">
-            <h2 class="section-title text-center"><i class="fa-solid fa-paper-plane me-2 text-success"></i>Hubungi Kami
+            <h2 class="section-title text-center mb-5">
+                <i class="fa-solid fa-location-dot me-2 text-danger"></i>Lokasi &amp; <i
+                    class="fa-solid fa-paper-plane me-2 text-success"></i>Hubungi Kami
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 animate__animated animate__fadeIn animate__delay-1s">
-                    <form action="mailto:contact@rihac.xyz" method="POST" enctype="text/plain">
-                        <div class="mb-3">
-                            <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama Anda"
-                                required>
+            <div class="row justify-content-center align-items-stretch">
+                <!-- Form Kirim Email -->
+                <div
+                    class="col-lg-6 mb-4 mb-lg-0 animate__animated animate__fadeIn animate__delay-1s d-flex align-items-stretch">
+                    <div class="w-100 bg-white rounded-3 shadow-sm p-4">
+                        <h4 class="mb-4"><i class="fa-solid fa-envelope me-2 text-primary"></i>Kirim Pesan</h4>
+                        <form action="mailto:contact@rihac.xyz" method="POST" enctype="text/plain">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama Anda"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="Email"
+                                    placeholder="email@domain.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="pesan" name="Pesan" rows="4"
+                                    placeholder="Tulis pesan Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Alamat & Detail Kontak -->
+                <div class="col-lg-6 animate__animated animate__fadeIn animate__delay-2s d-flex align-items-stretch">
+                    <div class="w-100 bg-white rounded-3 shadow-sm p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="mb-3"><i class="fa-solid fa-map-marker-alt me-2 text-danger"></i>Alamat Kantor
+                            </h4>
+                            <p class="mb-2">Grand Batavia 2, Cluster Sirena, Blok GB2S/02 No. 02<br>Desa Sukamantri,
+                                Kecamatan Pasar Kemis, Kabupaten Tangerang - 15560</p>
+                            <p class="mb-2"><i class="fa-solid fa-location-dot me-2 text-danger"></i>Tangerang, Banten
+                            </p>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="Email"
-                                placeholder="email@domain.com" required>
+                            <h5 class="mb-2"><i class="fa-solid fa-address-book me-2 text-success"></i>Kontak</h5>
+                            <p class="mb-1"><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                                contact@rihac.xyz</p>
+                            <p class="mb-1"><span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                                0812-8045-8641</p>
+                            <p class="mb-1"><span class="contact-icon"><i class="fa-brands fa-whatsapp"
+                                        style="color:#25d366;"></i></span> <a href="https://wa.me/6281280458641"
+                                    target="_blank" class="text-success text-decoration-none">0812-8045-8641</a></p>
                         </div>
-                        <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" name="Pesan" rows="4"
-                                placeholder="Tulis pesan Anda..." required></textarea>
+                        <div class="ratio ratio-16x9 mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.7200635466568!2d106.55997786961049!3d-6.146781266220245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a01f48818b397%3A0xe3a0e48082fdd89c!2sCluster%20Sirena%20Blok%20GB2S-02%20No.%2002!5e0!3m2!1sen!2sid!4v1754276748429!5m2!1sen!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <button type="submit" class="btn btn-primary">Kirim</button>
-                    </form>
-                    <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
-                        <p><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span> contact@rihac.xyz</p>
-                        <p><span class="contact-icon"><i class="fa-solid fa-phone"></i></span> 0812-8045-8641</p>
-                        <p><span class="contact-icon"><i class="fa-brands fa-whatsapp"
-                                    style="color:#25d366;"></i></span> <a href="https://wa.me/6281280458641"
-                                target="_blank" class="text-success text-decoration-none">0812-8045-8641</a></p>
                     </div>
                 </div>
             </div>
