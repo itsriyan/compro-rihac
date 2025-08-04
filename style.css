@@ -1,3 +1,26 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.home-title {
+    animation: fadeInLeft 1s;
+}
+
+.home-lead {
+    animation: fadeInLeft 1.2s;
+}
+
+.home-logo-animate {
+    animation: bounceIn 1.2s;
+}
+
+@media (max-width: 576px) {
+
+    .home-title,
+    .home-lead,
+    .home-logo-animate {
+        animation: none !important;
+    }
+}
+
 section {
     scroll-margin-top: 80px;
 }
