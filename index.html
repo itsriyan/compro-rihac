@@ -12,6 +12,33 @@
             background: #f8f9fa;
         }
 
+        #home {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: #fff;
+        }
+
+        #home img {
+            filter: drop-shadow(0 4px 16px rgba(30, 64, 175, 0.25));
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 12px;
+        }
+
+        #home .display-4 {
+            text-shadow: 0 2px 8px rgba(30, 64, 175, 0.15);
+        }
+
+        #home .lead {
+            color: #e0e7ef;
+        }
+
+        #home .fa {
+            color: #fff !important;
+            background: rgba(30, 64, 175, 0.2);
+            border-radius: 50%;
+            padding: 10px;
+        }
+
         .navbar-brand img {
             height: 40px;
             margin-right: 10px;
@@ -167,19 +194,21 @@
             <h2 class="section-title text-center">Hubungi Kami</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form>
+                    <form action="mailto:contact@rihac.xyz" method="POST" enctype="text/plain">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama Anda">
+                            <input type="text" class="form-control" id="nama" name="Nama" placeholder="Nama Anda"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="email@domain.com">
+                            <input type="email" class="form-control" id="email" name="Email"
+                                placeholder="email@domain.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="4"
-                                placeholder="Tulis pesan Anda..."></textarea>
+                            <textarea class="form-control" id="pesan" name="Pesan" rows="4"
+                                placeholder="Tulis pesan Anda..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Kirim</button>
                     </form>
