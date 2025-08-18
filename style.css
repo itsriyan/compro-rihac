@@ -5,62 +5,77 @@
         line-height: 1.2 !important;
         margin-bottom: 1rem !important;
     }
+
     .home-lead {
         font-size: 1rem !important;
         margin-bottom: 1rem !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
     .btn-lg {
         font-size: 1rem !important;
         padding: 0.75rem 1.2rem !important;
     }
+
     .gap-4 {
         gap: 0.7rem !important;
     }
+
     .client-logo {
         max-width: 90px !important;
         height: auto !important;
         margin-bottom: 0.5rem !important;
     }
+
     .section-title {
         font-size: 1.3rem !important;
         margin-bottom: 1.2rem !important;
     }
+
     .visimisi-list li {
         font-size: 0.98rem !important;
         margin-bottom: 0.7rem !important;
     }
+
     .navbar-brand img {
         height: 32px !important;
         width: 32px !important;
         margin-right: 6px !important;
     }
+
     .navbar-brand {
         font-size: 1.1rem !important;
     }
+
     .navbar-nav .nav-link {
         font-size: 1rem !important;
         padding: 0.5rem 0.7rem !important;
     }
+
     .ratio-16x9 {
         min-height: 180px !important;
     }
+
     .contact-icon {
         margin-right: 6px !important;
     }
+
     .py-5 {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
     }
+
     .container {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+
     .footer {
         font-size: 0.95rem !important;
         padding: 1rem 0 !important;
     }
+
     .home-logo-animate {
         height: 110px !important;
         width: 110px !important;
@@ -70,17 +85,30 @@
         max-height: 110px !important;
         box-shadow: none !important;
     }
+
     .position-relative.d-inline-block {
         min-height: 140px !important;
     }
+
     .d-flex.gap-4.align-items-center.mt-4 {
         flex-wrap: wrap !important;
         justify-content: center !important;
+        row-gap: 10px !important;
+        column-gap: 10px !important;
     }
+
     .d-flex.gap-4.align-items-center.mt-4 img {
         margin-bottom: 8px !important;
+        max-width: 90vw !important;
+        height: 48px !important;
+        object-fit: contain !important;
+        padding: 4px !important;
+        background: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 1px 4px rgba(30, 64, 175, 0.08) !important;
     }
 }
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 .home-title {
