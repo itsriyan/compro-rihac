@@ -1,6 +1,24 @@
 /* Home Section Illustration & Logo */
 /* Removed unused home illustration and logo styles, now handled inline in index.html */
 
+.home-bg-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 110px;
+    z-index: 0;
+    opacity: 0.08;
+    background: radial-gradient(circle, #2563eb 0, #fff 100%);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .home-bg-top-right {
+        display: block;
+    }
+}
+
 /* Responsive improvements for mobile view */
 @media (max-width: 576px) {
     .home-title {
